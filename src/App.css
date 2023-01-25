@@ -7,21 +7,7 @@
   align-items: center;
   flex-direction: column;
 }
-.target{
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  font-size: 0.8rem;
-  border-radius: 50px;
-  /* border: 1px solid #000000d3; */
-  width: 325px;
-  height: 510px;
-  box-shadow: 20px 30px 5px rgba(0,0,0,0.5), 20px 20px 5px rgba(0, 0, 0, 0.5);
-  /* background-color: aquamarine; */
-  }
+
 
   h1{
     padding: 5px 10px;
@@ -42,29 +28,75 @@
    p{
     padding: 0;
     margin: 0;
-
+    font-size: 1rem;
    }
 
   img{
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 5px 7px 15px 7px;
      }
 
      button{
       padding: 8px 12px;
-      background-color: rgba(255, 255, 255, 0);
+      background-color: rgba(255, 255, 255, 0.47);
       color: black;
       cursor: pointer;
       border-radius: 15px;
       font-size: 20px;
-  
-      margin: 10px;
-      box-shadow: 2px 3px 10px rgba(0,0,0,0.8), 2px 3px 10px rgba(0, 0, 0, 0.9);
+      margin: 15px 15px 0 15px;
+      box-shadow: 2px 3px 13px rgba(0,0,0,0.8), 2px 3px 13px rgba(0, 0, 0, 0.9);
      }
 
      button:hover{
-      background-color: rgba(0, 0, 0, 0.15);
-      box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.7), 2px 3px 10px rgba(255, 255, 255, 0.6);
+      background-color:  rgba(255, 255, 255, 0.3);
+      box-shadow: 2px 3px 13px rgba(255, 255, 255, 0.7), 2px 3px 13px rgba(255, 255, 255, 0.6);
      }
+
+     .target{
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      font-size: 0.8rem;
+      border-radius: 50px;
+      /* border: 1px solid #000000d3; */
+      width: 325px;
+      height: 510px;
+      box-shadow: 20px 30px 5px rgba(0,0,0,0.5), 20px 20px 5px rgba(0, 0, 0, 0.5);
+      /* background-color: aquamarine; */
+      }
+
+      @media(max-width: 600px) {
+        .target{
+          width: 280px;
+          height: 470px;
+          }
+
+          h1{
+            font-size: 1.57rem;
+          }
+        
+          ul{
+            font-size: 1rem;
+            
+          }
+          p{
+            font-size: 0.9rem;
+          }
+
+          button{
+            margin-top: 7px;
+            font-size: 1rem;
+          }
+
+          img{
+            width: 180px;
+            height: 180px;
+            border-radius: 15px;
+            margin: 0px 5px 12px 7px;
+             }
+      }
